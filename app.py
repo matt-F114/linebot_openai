@@ -30,7 +30,7 @@ def handle_message(event):
             {"role": "user", "content": text1}
         ],
         model="gpt-5-nano",
-        temperature = 0.5,
+        temperature = 1,
     )
     try:
         ret = response['choices'][0]['message']['content'].strip()
